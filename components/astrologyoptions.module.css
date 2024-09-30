@@ -1,0 +1,36 @@
+/* Container styling */
+.toggle-container {
+    display: inline-flex; /* Align buttons horizontally */
+    border: 1px solid #319795; /* teal-700 border color */
+    border-radius: 45px; /* Rounding for the whole toggle container */
+    overflow: hidden; /* Ensure rounded corners are respected */
+}
+
+/* Common styling for both buttons */
+.toggle-btn {
+    background-color: white;
+    color: #055755; /* teal-700 text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default button border */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+}
+
+/* Left button rounded on the left side */
+.left-btn {
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+/* Right button rounded on the right side */
+.right-btn {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+/* Hover effect for both buttons */
+.toggle-btn:hover {
+    background-color: #319795; /* Change background to teal-700 on hover */
+    color: white; /* Change text to white on hover */
+}
